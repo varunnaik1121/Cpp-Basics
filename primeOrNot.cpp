@@ -7,7 +7,8 @@ int main()
     bool isPrime = true;
     cout << "enter the number ";
     cin >> number;
-    for (int i = 2; i < number; i++)
+    // will check only for n/2 because it will always remains the same
+    for (int i = 2; i < number / 2; i++)
     {
         if (number % i == 0)
         {
