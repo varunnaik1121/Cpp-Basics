@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
-void insertionSort(int arr[], int n);
+void selectionSort(int arr[], int n);
 int main()
 {
     int n, arr[100];
@@ -17,30 +17,29 @@ int main()
     {
         cout << arr[i] << "\n";
     }
-    insertionSort(arr, n);
+    selectionSort(arr, n);
 
     return 0;
 }
 
-void insertionSort(int arr[], int n)
+void selectionSort(int arr[], int n)
 {
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n; i++)
     {
-        int j = i + 1;
-        for (int c = 0; c < i + 1; c++)
+        int bigIndex = 0;
+        for (int j = 0; j <= n - i - 1; j++)
         {
-            if (arr[j] < arr[j - 1])
+
+            if (arr[j] > arr[bigIndex])
             {
-                int temp = arr[j];
-                arr[j] = arr[j - 1];
-                arr[j - 1] = temp;
-                j--;
-            }
-            else
-            {
-                break;
+
+                bigIndex = j;
             }
         }
+
+        int temp = arr[n - i - 1];
+        arr[n - i - 1] = arr[bigIndex];
+        arr[bigIndex] = temp;
     }
     cout << "Elements after sorting are \n";
     for (int i = 0; i < n; i++)
