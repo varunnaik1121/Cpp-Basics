@@ -45,7 +45,7 @@ int orderAgnosticArray(int arr[], int target, int n)
         }
     }
 
-    return -1;
+    return start;
 }
 int main()
 {
