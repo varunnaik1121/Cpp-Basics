@@ -34,7 +34,7 @@ int orderAgnosticArray(int arr[], int target, int n)
         }
         else
         {
-            else if (target < arr[mid]) //[10,9,8,7,6,5,4]=>target
+            if (target < arr[mid]) //[10,9,8,7,6,5,4]=>target
             {
                 start = mid + 1;
             }
