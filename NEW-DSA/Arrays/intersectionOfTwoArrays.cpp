@@ -2,6 +2,8 @@
 using namespace std;
 int main()
 {
+    // the logic is comparing the both the arrays and mark the element in the second array as marked...
+    // time complexity will be O(n^2)
     int arr1[] = {1, 2, 3, 3, 3, 4};
     int arr2[] = {3, 4};
 
