@@ -38,7 +38,7 @@ int main()
     }
     if (sorted[n - 1] != sorted[n - 2])
     {
-        cout << sorted[n-1];
+        cout << sorted[n - 1];
     }
 
     return 0;
