@@ -15,7 +15,7 @@ int main()
 {
     // finding the duplicate among the arrays given by n where n-1 are numbers//[1,2,3,4,4]=>2,3,4 if we XOR with 1 2 3 4 ans will 1wbe the unique one
     int n = 5;
-    int arr[] = {1, 2,3, 4, 4};
+    int arr[] = {1, 2, 3, 4, 4};
     // int ans = 0;
     // for (int i = 0; i < n; i++)
     // {
