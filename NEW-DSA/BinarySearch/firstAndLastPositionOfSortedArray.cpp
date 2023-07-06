@@ -30,7 +30,7 @@ int binarySearch(int arr[], int n, int target)
 
 int main()
 {
-    int arr[] = {1, 3, 4, 6, 7, 9, 10};
+    int arr[] = {1, 3, 4, 4, 6, 7, 9, 10};
     int target = 4;
     cout << binarySearch(arr, 7, target);
     return 0;
