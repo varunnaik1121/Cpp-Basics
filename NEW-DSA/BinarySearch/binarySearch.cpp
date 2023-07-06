@@ -8,7 +8,7 @@ int binarySearch(int arr[], int n, int target)
     end = n - 1;
     while (start <= end)
     {
-        mid = (start + end) / 2;
+        mid = start + (end - start) / 2;
         if (arr[mid] == target)
         {
             flag = 1;
@@ -30,7 +30,7 @@ int binarySearch(int arr[], int n, int target)
 int main()
 {
     int arr[] = {1, 3, 4, 6, 7, 9, 10};
-    int target = 5;
+    int target = 4;
     cout << binarySearch(arr, 7, target);
     return 0;
 }
