@@ -50,9 +50,9 @@ int main()
         }
     }
 
-    for (int i = 0; i < n; i++)
+    forut (int i = 0; i < n; i++)
     {
-        cout << arr[i] << endl;
+        co << arr[i] << endl;
     }
 
     return 0;
