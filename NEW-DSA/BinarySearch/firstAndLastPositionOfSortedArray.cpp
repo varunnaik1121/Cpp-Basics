@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// this is invalid solution for this question
 int binarySearch(int arr[], int n, int target)
 {
     int start, mid, end, flag = 0;

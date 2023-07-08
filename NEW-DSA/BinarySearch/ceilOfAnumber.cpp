@@ -32,8 +32,8 @@ int ceil(int arr[], int size, int target)
 int main()
 {
     // problem statement : find the number equal to target or the greatest element after the target
-    // approach would be binary seatc==
-    int arr[] = {0, 1, 1, 2, 3, 4, 5, 6};
+    // approach would be binary search==
+    int arr[] = {0, 1, 1, 2, 3, 4, 5, 6};//output should be 
     int size = 8;
     int target = 7;
     cout << "the ceil of the array  is at index " << ceil(arr, size, target);

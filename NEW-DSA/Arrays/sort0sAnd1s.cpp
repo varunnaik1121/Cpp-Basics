@@ -4,8 +4,8 @@ int main()
 {
     // basic approach with O(N) time complexity
     // can be sorted so all the zeros are will be on left side
-    // two pointer with same array swap 
-    //Time complexity is O(N)
+    // two pointer with same array swap
+    // Time complexity is O(N)
 
     int arr[] = {
         0,
@@ -50,9 +50,9 @@ int main()
         }
     }
 
-    forut (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        co << arr[i] << endl;
+        cout << arr[i] << endl;
     }
 
     return 0;
