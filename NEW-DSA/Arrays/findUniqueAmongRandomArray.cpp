@@ -6,7 +6,7 @@ int main()
     // first apporach will be maintaining the count
     // Time complexity will be
     // int arr[] = {10, 20, 30, 40, 50, 20, 10, 30};
-    int sorted[] = {10, 10, 10, 10, 20, 20, 30, 30, 40, 50};
+    int sorted[] = {100, 10, 10, 10, 10, 20, 20, 30, 30, 40, 50};
     // int count = 0;
     // for (int i = 0; i < 8; i++)
     // {
@@ -25,8 +25,8 @@ int main()
     // }
 
     // checking if the next and previous elements are not equal if so then that is unique
-    // Time Complexity O(NlogN)
-    int n = 10;
+    // Time Complexity O(n)
+    int n = 11;
 
     for (int i = 0; i < n - 1; i++)
     {

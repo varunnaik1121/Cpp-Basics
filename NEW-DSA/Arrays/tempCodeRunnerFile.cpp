@@ -1,17 +1,10 @@
- while (i <= j)
+ for (int i = 0; i < 8; i++)
     {
-        if ((sorted[i] + sorted[j]) > sum)
+        for (int j = i + 1; j < 8; j++)
         {
-            j--;
-        }
-        else if ((sorted[i] + sorted[j]) < sum)
-        {
-            i++;
-        }
-        if ((sorted[i] + sorted[j]) == sum)
-        {
-            cout << sorted[i] << " " << sorted[j] << endl;
-
-            i++;
+            if (arr[i] + arr[j] == sum)
+            {
+                cout << arr[i] << " " << arr[j] << endl;
+            }
         }
     }

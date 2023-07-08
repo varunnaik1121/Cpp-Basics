@@ -9,28 +9,28 @@ int ceil(int arr[], int size, int target)
     while (start <= end)
     {
         mid = (start + end) / 2;
-        if (arr[mid] == target)
-        {
-            return mid;
-        }
-        else if (arr[mid] > target)
+
+        if (target < arr[mid])
         {
             end = mid - 1;
         }
         else
         {
-            start = mid + 1;
+            {
+                start = mid + 1;
+            }
         }
     }
-    return end;
+
+    return arr[start % size];
 }
 int main()
 {
     // problem statement : find the number equal to target or the greatest element after the target
     // approach would be binary seatc==
-    int arr[] = {0, 1, 1, 2, 4, 5, 6};
-    int size = 7;
-    int target = 7;
+    int arr[] = {0, 1, 1, 2, 3, 4, 5, 6};
+    int size = 8;
+    int target = 2;
     cout << "the ceil of the array  is at index " << ceil(arr, size, target);
     return 0;
 }
