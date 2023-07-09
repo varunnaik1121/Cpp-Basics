@@ -18,7 +18,21 @@ int findPivot(int arr[], int size)
         {
             return mid;
         }
-        else if (arr[mid] > arr[0])
+        if (arr[mid] == arr[start] && arr[mid] == arr[end])
+        {
+            if (arr[start] > arr[start + 1])
+            {
+                return start;
+            }
+            start++;
+
+            if (arr[end] < arr[end - 1])
+            {
+                return end - 1;
+            }
+            end--;
+        }
+        else if (arr[start] < arr[mid])
         {
             start = mid + 1;
         }
@@ -76,9 +90,9 @@ int binarySearch(int arr[], int starting, int target, bool isAscending, int endi
 }
 int main()
 {
-    int arr[] = {4, 5, 6, 0, 1, 2, 3};
-    int size = 6;
-    int target = 0;
+    int arr[] = {4, 4, 4, 4, 5, 5, 5, 5, 6, 0, 1, 2, 3, 3, 3, 3};
+    int size = 16;
+    int target = 6;
     int pivot = findPivot(arr, size);
     cout << "The pivot is " << pivot << endl;
 
