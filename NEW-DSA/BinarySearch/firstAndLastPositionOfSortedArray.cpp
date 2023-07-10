@@ -47,19 +47,10 @@ int main()
 
     cout << "the answer is " << endl;
 
-    if (indexes[0] < 0)
-    {
-        cout << -1 << " " << -1 << endl;
-    }
-    else if (indexes[0] && !indexes[1])
-    {
-        cout << indexes[0] << indexes[0] << endl;
-    }
-    else
-    {
-        cout << indexes[0] << " " << indexes[index - 1] << endl;
-    }
-
+    // return the first in array and return the last in array
+    // example arr[0] and arr[length-1]
+    // if array has no elements in it the return -1 in both the conditions
+    // if array has one element then return -1 -1 in both the conditions
     // cout << binarySearch(arr, 7, target);
     return 0;
 }
