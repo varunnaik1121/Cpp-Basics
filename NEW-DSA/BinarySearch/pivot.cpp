@@ -77,7 +77,7 @@ int binarySearch(int arr[], int starting, int target, bool isAscending, int endi
 int main()
 {
     int arr[] = {4, 5, 6, 0, 1, 2, 3};
-    int size = 6;
+    int size = 7;
     int target = 0;
     int pivot = findPivot(arr, size);
     cout << "The pivot is " << pivot << endl;
