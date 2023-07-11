@@ -40,7 +40,7 @@ int largestSubarray(int arr[], int size, int m)
     int mid;
     int ans = start;
 
-    while (start < end)
+    while (start <= end)
     {
         mid = (start + end) / 2;
         int n = no_of_possible_subarray(arr, mid, size);
@@ -59,10 +59,10 @@ int largestSubarray(int arr[], int size, int m)
 int main()
 {
     // basic approach would be linear search and find the smallest Time Complexity will be O(N)
-    int arr[] = {3, 6, 2, 8, 4}; // when m=2 split it two two arrays such that the sum of sub arrays in minimum
+    int arr[] = {3, 6, 1, 2}; // when m=2 split it two two arrays such that the sum of sub arrays in minimum
     // possible subArrays is [2,3] [8,4,1]=>5,13: max is 13,16,17,13, answer will be 13
-    int size = 5;
+    int size = 4;
     int m = 2;
-    cout << "the peak element is at index " << largestSubarray(arr, size, m);
+    cout << "the smallest sum is the" << largestSubarray(arr, size, m);
     return 0;
 }
